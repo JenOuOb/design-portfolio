@@ -44,12 +44,6 @@ $phoneH6: 12px;
 //如有個div是450px * 450px 需要他可以自行縮放，可改寫成下列
 //範例寫法：width:calc(450 * var(--pv)) ; height:calc(450 * var(--pv))
 
-//建議可以改寫在ipad的版本內
-:root{
-    --pv: calc(100vw / 1920);
-    font-size: calc(16px + 8 * (100vw - 320px) / 960);
-}
-
 //小螢幕版面設置
 @mixin s-monitor{
     @media (max-width:1024px) {

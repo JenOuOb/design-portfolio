@@ -7,7 +7,28 @@
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 80px;
-  background-color: aqua;
+  background-color: gray;
+}
+header .logo-area {
+  width: 80%;
+  font-size: 35px;
+  border-bottom: 1px solid;
+}
+header .icon-area img {
+  width: 30px;
+  height: 35px;
+}
+header .icon-area .icon-line:hover {
+  transform: scale(1.2);
+}
+header .icon-area .icon-fb:hover {
+  transform: scale(1.2);
+}
+header .icon-area .icon-ig:hover {
+  transform: scale(1.2);
 }

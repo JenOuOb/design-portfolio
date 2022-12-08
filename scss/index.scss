@@ -1,3 +1,5 @@
+@import 'baseVar';
+
 * {
     box-sizing: border-box;
     list-style: none;
@@ -7,7 +9,40 @@
 }
 
 header {
+    @include flex;
     width: 100%;
     height: 80px;
-    background-color: aqua;
+    background-color: gray;
+
+    .logo-area {
+        width: 80%;
+        font-size: 35px;
+        border-bottom: 1px solid;
+    }
+
+    .icon-area {
+        img {
+            width: 30px;
+            height: 35px;
+        }
+
+        .icon-line {
+            &:hover {
+                transform: scale(1.2)
+            }
+        }
+
+        .icon-fb {
+            &:hover {
+                transform: scale(1.2)
+            }
+        }
+
+        .icon-ig {
+            &:hover {
+                transform: scale(1.2)
+            }
+        }
+
+    }
 }
